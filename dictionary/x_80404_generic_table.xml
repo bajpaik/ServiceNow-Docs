@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Generic Table" max_length="40" name="x_80404_generic_table" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Journal" max_length="4000" name="journal" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" label="Journal Input Field" max_length="40" name="journal_input_field" type="journal_input"/>
+        <element dependent="journal_input_field" dependent_on_field="journal_input_field" label="Journal List" max_length="40" name="journal_list" type="journal_list" use_dependent_field="true"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Customer ID" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Father's name" max_length="40" name="u_father_name" type="string"/>
+        <element label="Location" max_length="32" name="u_location" reference="cmn_location" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Mother's name" max_length="40" name="u_mother_name" type="string"/>
+        <element label="Your Name" max_length="32" name="your_name" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="u_location"/>
+        </index>
+        <index name="index2">
+            <element name="your_name"/>
+        </index>
+    </element>
+</database>

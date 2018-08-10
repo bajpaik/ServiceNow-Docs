@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description>The following live editor allows you to see the APOD API in action!</description>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link/>
+        <name>APOD API</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[ var restMessage = new sn_ws.RESTMessageV2();
+//restMessage.setBasicAuth("admin", "admin");
+restMessage.setHttpMethod("get");
+restMessage.setEndpoint("https://api.nasa.gov/planetary/apod?api_key=QCrSHelWW8uj6nkCCPqa0SdQUOajLGKhvbsKSfME&hd=True");
+//restMessage.setRequestBody("{\"short_description\" : \"Test incident\"}");
+var response = restMessage.execute();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>workhstayh</sys_created_by>
+        <sys_created_on>2018-08-03 12:08:49</sys_created_on>
+        <sys_id>0ee37804db33d300329ffe1ebf96196b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>APOD API</sys_name>
+        <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+        <sys_update_name>sp_widget_0ee37804db33d300329ffe1ebf96196b</sys_update_name>
+        <sys_updated_by>workhstayh</sys_updated_by>
+        <sys_updated_on>2018-08-03 13:12:27</sys_updated_on>
+        <template><![CDATA[
+  
+ ]]></template>
+    </sp_widget>
+</record_update>

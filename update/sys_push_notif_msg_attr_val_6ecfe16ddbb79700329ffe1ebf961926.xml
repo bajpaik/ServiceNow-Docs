@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_push_notif_msg_attr_val">
+    <sys_push_notif_msg_attr_val action="INSERT_OR_UPDATE">
+        <action display_value="Assign to me">78b3bd91dbbf5700329ffe1ebf9619d0</action>
+        <calculated_attribute>action_of_button1</calculated_attribute>
+        <calculated_value>Assign to me</calculated_value>
+        <definition display_value="action_of_button1">0284f5d1dbbf5700329ffe1ebf9619b2</definition>
+        <message display_value="New Record on Generic">21b51d2ddb779700329ffe1ebf961928</message>
+        <sys_class_name>sys_push_notif_msg_attr_val</sys_class_name>
+        <sys_created_by>workhstayh</sys_created_by>
+        <sys_created_on>2018-08-08 08:20:49</sys_created_on>
+        <sys_id>6ecfe16ddbb79700329ffe1ebf961926</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+        <sys_update_name>sys_push_notif_msg_attr_val_6ecfe16ddbb79700329ffe1ebf961926</sys_update_name>
+        <sys_updated_by>workhstayh</sys_updated_by>
+        <sys_updated_on>2018-08-08 08:20:49</sys_updated_on>
+        <value/>
+    </sys_push_notif_msg_attr_val>
+</record_update>

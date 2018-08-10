@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_push_notif_msg_content">
+    <sys_push_notif_msg_content action="INSERT_OR_UPDATE">
+        <name>Buttons to respond to incident</name>
+        <push_app display_value="ServiceNow Mobile Application">ab704041ff1102009738ffffffffff33</push_app>
+        <script><![CDATA[(function buildJSON(/*GlideRecord*/ current, /*String*/ message, /*Object*/ attributes) {
+
+ var json = {};
+
+json = {
+		"aps" : {
+			"sound" : "default"
+		},
+		"record" : {
+			"table" : current.getTableName(),
+			"sys_id" : current.sys_id
+		},
+		"action" : {
+                                "button1_text" : attributes.name_of_button1,
+				    "button1_action" : attributes.action_of_button1,
+				    "button2_text" : attributes.name_of_button2,
+				    "button2_action" : attributes.action_of_button2 }
+	};
+
+ return json;
+
+})(current, message, attributes);]]></script>
+        <sys_class_name>sys_push_notif_msg_content</sys_class_name>
+        <sys_created_by>workhstayh</sys_created_by>
+        <sys_created_on>2018-08-07 14:01:33</sys_created_on>
+        <sys_id>113435d1dbbf5700329ffe1ebf961952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Buttons to respond to incident</sys_name>
+        <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+        <sys_update_name>sys_push_notif_msg_content_113435d1dbbf5700329ffe1ebf961952</sys_update_name>
+        <sys_updated_by>workhstayh</sys_updated_by>
+        <sys_updated_on>2018-08-07 14:01:33</sys_updated_on>
+    </sys_push_notif_msg_content>
+</record_update>

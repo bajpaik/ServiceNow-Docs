@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>liquid_button</id>
+        <internal>false</internal>
+        <link/>
+        <name>Liquid Button</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[const fragment = `
+  precision mediump float;
+  uniform vec2 uResolution;
+  uniform float uTime;
+  void main() {
+    vec2 uv = gl_FragCoord.xy / uResolution.xy;
+    uv = uv * 2.0 - 1.0;
+    uv.x *= uResolution.x / uResolution.y;
+    float cs = sin(gl_FragCoord.y) * cos(gl_FragCoord.x);
+    float d = -distance(uv, vec2(0.0, 0.0)) * 10.0;
+    float c = sin(d + uTime + cs);
+    gl_FragColor = vec4(cos(uv.y), c, sin(uv.y), 1.0);
+  }
+`;
+
+const uniforms = {
+  uTime: {
+    type: 'float',
+    value: 1.0,
+  },
+  uResolution: {
+    type: 'vec2',
+    value: [window.innerWidth, window.innerHeight],
+  },
+};
+
+function render({ uTime, uResolution }) {
+  uTime.value += 0.15;
+  uResolution.value = [window.innerWidth, window.innerHeight];
+}
+
+Phenomenon(fragment, uniforms, render);]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>workhstayh</sys_created_by>
+        <sys_created_on>2018-08-02 14:06:36</sys_created_on>
+        <sys_id>34a5443bdb679300329ffe1ebf961974</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Liquid Button</sys_name>
+        <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+        <sys_update_name>sp_widget_34a5443bdb679300329ffe1ebf961974</sys_update_name>
+        <sys_updated_by>workhstayh</sys_updated_by>
+        <sys_updated_on>2018-08-02 14:16:58</sys_updated_on>
+        <template/>
+    </sp_widget>
+</record_update>

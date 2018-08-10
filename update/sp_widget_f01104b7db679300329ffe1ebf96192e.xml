@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #202020;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.buttons-container {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 395px;
+  height: 100px;
+  border-radius: 45px;
+  background: #151515;
+  box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+  list-style: none;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1px;
+    height: 90px;
+    width: 95px;
+    background: #202020;
+    border-top: 1px solid #353535;
+    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
+    transition: all .5s;
+    &amp;:nth-of-type(1) {
+      border-top-left-radius: 40px;
+      border-bottom-left-radius: 40px;
+    }
+    &amp;:last-of-type {
+      border-top-right-radius: 40px;
+      border-bottom-right-radius: 40px;
+    }
+    &amp;:hover {
+      cursor: pointer;
+    }
+    a {
+      display: inline-block;
+      color: gray;
+      text-decoration: none;
+      font-size: 40px;
+      transition: all .5s;
+    }
+  }
+}
+
+.created-by {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  width: 200px;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  p {
+    color: white;
+  }
+  a {
+    color: crimson;
+    text-shadow: 0 0 15px rgba(244, 0, 0, 0.71);
+    text-decoration: none;
+    font-weight: 700;
+    &amp;:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.active {
+  background: #151515;
+  border-top: none;
+  border-bottom: 1px solid #252525;
+  box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.8);
+}
+
+.active-text {
+  color: crimson;
+  text-shadow: 0 0 15px rgba(220, 10, 10, 0.5);
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link/>
+        <name>UI #1 - Nav Buttons</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  var  lis = document.querySelectorAll("li");
+var a = document.querySelectorAll("li a");
+
+for (var i = 0; i < lis.length; i++) {
+  lis[i].addEventListener("click", function() {
+    for (var i = 0; i < lis.length; i++) {
+      lis[i].classList.remove("active");
+      a[i].classList.remove("active-text");
+    }
+    this.classList.add("active");
+    a[i].classList.add("active-text");
+  });
+}
+  var c = this;
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>workhstayh</sys_created_by>
+        <sys_created_on>2018-08-02 13:52:04</sys_created_on>
+        <sys_id>f01104b7db679300329ffe1ebf96192e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>UI #1 - Nav Buttons</sys_name>
+        <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+        <sys_update_name>sp_widget_f01104b7db679300329ffe1ebf96192e</sys_update_name>
+        <sys_updated_by>workhstayh</sys_updated_by>
+        <sys_updated_on>2018-08-02 13:53:24</sys_updated_on>
+        <template><![CDATA[<div class="buttons-container">
+  <ul>
+    <li class="active"><a href="javascript:void(0)" class="active-text"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+    <li><a href="javascript:void(0)"><i class="fa fa-coffee" aria-hidden="true"></i></a></li>
+    <li><a href="javascript:void(0)"><i class="fa fa-rocket" aria-hidden="true"></i></a></li>
+    <li><a href="javascript:void(0)"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+  </ul>
+</div>
+
+<div class="created-by">
+  <p>Created by</p>
+  <a href="https://codepen.io/AlbertFeynman/" target="_blank">Albert Feynman</a>
+</div>]]></template>
+    </sp_widget>
+</record_update>

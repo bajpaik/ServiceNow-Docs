@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="GitHub Jobs" max_length="40" name="x_80404_generic_github_jobs" type="collection">
+        <element label="Company" max_length="40" name="company" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Company URL" max_length="100" name="company_url" type="string"/>
+        <element label="Description" max_length="255" name="description" type="string_full_utf8"/>
+        <element label="Full Time Only" max_length="40" name="full_time_only" type="boolean"/>
+        <element label="Job Description" max_length="80" name="job_description" type="string"/>
+        <element label="Job Id" mandatory="true" max_length="80" name="job_id" type="string"/>
+        <element label="Location" max_length="80" name="location" type="string"/>
+    </element>
+</database>
