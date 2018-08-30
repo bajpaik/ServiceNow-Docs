@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_angular_provider">
+    <sp_angular_provider action="INSERT_OR_UPDATE">
+        <name>portalFavorites</name>
+        <script><![CDATA[//This service is used to provide reusable functions for adding and removing favorites. Since Angular Providers don't have a server script, like a widget does, I used a scripted REST API to handle the server side functions.
+
+function($http, $q) {
+
+  function _insert(data) {
+    var def = $q.defer();
+    var putter = '/api/x_80404_generic/portalfavorites/insertFavorite';
+    $http.put(putter, data)
+      .success(function(response){
+        console.log('insert success');
+        def.resolve(response.result.data);
+      })
+      .error(function() {
+        console.log('insert fail');
+        def.reject("Failed to get message");
+      });
+
+    return def.promise;
+  }
+
+  function _delete(data) {
+    var def = $q.defer();
+    var putter = '/api/x_80404_generic/portalfavorites/deleteFavorite';
+    $http.post(putter, data)
+      .success(function(response){
+        console.log('delete success');
+        def.resolve(response.result.data);
+      })
+      .error(function() {
+        console.log('delete fail');
+        def.reject("Failed to get message");
+      });
+
+    return def.promise;
+  }
+
+  return {
+
+    toggleFavorite: function(item) {
+      var data = {
+        table: item.type == 'kb' ? 'kb_knowledge' : 'sc_cat_item',
+        document: item.sys_id
+      };
+
+      if(item.isFavorite) {
+        _delete(data).then(function(r){
+          item.isFavorite = !item.isFavorite;
+        });
+
+      } else {
+        _insert(data).then(function(r){
+          item.isFavorite = !item.isFavorite;
+        });
+
+      }
+    }
+
+  };
+}]]></script>
+        <sys_class_name>sp_angular_provider</sys_class_name>
+        <sys_created_by>workhstayh</sys_created_by>
+        <sys_created_on>2018-08-16 06:20:10</sys_created_on>
+        <sys_id>7ce0ae00dbc06700329ffe1ebf96191a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>portalFavorites</sys_name>
+        <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+        <sys_update_name>sp_angular_provider_7ce0ae00dbc06700329ffe1ebf96191a</sys_update_name>
+        <sys_updated_by>workhstayh</sys_updated_by>
+        <sys_updated_on>2018-08-16 07:22:15</sys_updated_on>
+        <type>service</type>
+    </sp_angular_provider>
+</record_update>

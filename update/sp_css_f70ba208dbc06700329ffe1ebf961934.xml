@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_css">
+    <sp_css action="INSERT_OR_UPDATE">
+        <css>.ht-portal-favorite-toggle {&#13;
+  float: right;&#13;
+  font-size: 1.5em;&#13;
+}&#13;
+.ht-manage-favorites-container {&#13;
+  min-height: 500px; &#13;
+}&#13;
+.ht-favorites {&#13;
+  display: grid;&#13;
+  justify-content: center;&#13;
+  grid-auto-rows: auto;&#13;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));&#13;
+  grid-gap: 2rem 2rem;&#13;
+}&#13;
+.ht-favorite {&#13;
+  min-height: 275px;&#13;
+  margin-bottom: 2rem;&#13;
+  background: #fff;&#13;
+  position: relative;&#13;
+}&#13;
+.ht-card {&#13;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);&#13;
+  transition: 0.3s;&#13;
+  text-align: center;&#13;
+}&#13;
+.ht-card:hover {&#13;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);&#13;
+}&#13;
+.ht-card-body {&#13;
+  padding: 2px 16px 12px;&#13;
+}&#13;
+.ht-card-image {&#13;
+  height: 150px;&#13;
+}&#13;
+.ht-card-image img{&#13;
+  height: 100%;&#13;
+}&#13;
+.ht-card-icon i {&#13;
+  font-size: 72px;&#13;
+  margin-top: 36px;&#13;
+  background: #666;&#13;
+  padding: 12px;&#13;
+  width: 100px;&#13;
+  border-radius: 50px;&#13;
+  color: #ededed;&#13;
+}&#13;
+.ht-card-body .btn {&#13;
+  font-size: 1.2rem;&#13;
+  border-width: 3px;&#13;
+}&#13;
+.ht-card-buttons {&#13;
+  position: absolute;&#13;
+  left: 0;&#13;
+  right: 0;&#13;
+  text-align: center;&#13;
+  bottom: 1rem;&#13;
+}&#13;
+.ht-card-buttons a:last-child {&#13;
+  margin-left: 1rem;&#13;
+}&#13;
+.ht-favorite-loading-icon {&#13;
+  position: absolute;&#13;
+  height: 100%;&#13;
+  width: 100%;&#13;
+  top: 0;&#13;
+  left: 0;&#13;
+}&#13;
+.ht-favorite-loading-icon i {&#13;
+  font-size: 72px;&#13;
+  color: #f0f0f0;&#13;
+  margin-top: 48px;&#13;
+  opacity: .5;&#13;
+}</css>
+        <name>.ht-porta-favorite-toggle</name>
+        <sys_class_name>sp_css</sys_class_name>
+        <sys_created_by>workhstayh</sys_created_by>
+        <sys_created_on>2018-08-16 07:04:34</sys_created_on>
+        <sys_id>f70ba208dbc06700329ffe1ebf961934</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.ht-porta-favorite-toggle</sys_name>
+        <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+        <sys_update_name>sp_css_f70ba208dbc06700329ffe1ebf961934</sys_update_name>
+        <sys_updated_by>workhstayh</sys_updated_by>
+        <sys_updated_on>2018-08-16 07:04:34</sys_updated_on>
+    </sp_css>
+</record_update>

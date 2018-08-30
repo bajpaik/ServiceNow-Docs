@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_80404_generic.portalFavorites</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>This script include is used to store server side functions that will be used by many of the other components.</description>
+        <name>portalFavorites</name>
+        <script><![CDATA[var portalFavorites = Class.create();
+portalFavorites.prototype = {
+    initialize: function() {
+    },
+getFavorites: function() {
+    var favorites = [];
+    
+    var fav = new GlideRecord('x_80404_generic_portal_favorite');
+    fav.addQuery('user', gs.getUserID());
+    fav.orderBy('order');
+    fav.query();
+    while(fav.next()) {
+      favorites.push(this.formatFavorite(fav));
+    }
+    
+    return favorites;
+  },
+
+  isFavorite: function(table, document) {
+    var isFavorite = false;
+
+    var fav = new GlideRecord('x_80404_generic_portal_favorite');
+    fav.addQuery('user', gs.getUserID());
+    fav.addQuery('table', table);
+    fav.addQuery('document', document);
+    fav.query();
+    if(fav.hasNext()) {
+      isFavorite = true;
+    }
+    return isFavorite;
+  },
+
+  reorderFavorites: function(newIndex, oldIndex, id) {
+    var i;
+
+    var fav = new GlideRecord('x_80404_generic_portal_favorite');
+    fav.addQuery('user',gs.getUserID());
+
+    if(!oldIndex) {
+      //This is a new item, so move everything down in order.
+      fav.addQuery('sys_id','!=',id);
+      fav.query();
+      while(fav.next()) {
+        i = Math.floor(fav.getValue('order'));
+        i++;
+        fav.order = i;
+        fav.update();
+      }
+      return;
+    }
+
+    if(!id) {
+      //An item was removed, so move everything that was behind it up in order.
+      fav.addQuery('order','>',oldIndex);
+      fav.query();
+      while(fav.next()) {
+        i = Math.floor(fav.getValue('order'));
+        i--;
+        fav.order = i;
+        fav.update();
+      }
+      return;
+    }
+
+    if(oldIndex < newIndex) {
+      //The item was moved down in order.
+      //example, if item moved from 3 to 7, then get the items with indexes 4, 5, 6, & 7 and move them up in order
+      fav.addQuery('sys_id','!=',id);
+      fav.addQuery('order','>',oldIndex);
+      fav.addQuery('order','<=',newIndex);
+      fav.query();
+      while(fav.next()) {
+        i = Math.floor(fav.getValue('order'));
+        i--;
+        fav.order = i;
+        fav.update();
+      }
+    }
+
+    if(oldIndex > newIndex) {
+      //The item was moved up in order.
+      //example, if item moved from 7 to 3, then get all items with indexes 3, 4, 5, & 6 and move them down in order
+      fav.addQuery('sys_id','!=',id);
+      fav.addQuery('order','<',oldIndex);
+      fav.addQuery('order','>=',newIndex);
+      fav.query();
+      while(fav.next()) {
+        i = Math.floor(fav.getValue('order'));
+        i++;
+        fav.order = i;
+        fav.update();
+      }
+    }
+
+    //If a favorite was moved (not added or removed), then the last step is to update the new position of the moved item
+    var item = new GlideRecord('x_80404_generic_portal_favorite');
+    item.get(id);
+    item.order = newIndex;
+    item.update();
+
+  },
+  
+  removeFavorite: function(id) {
+    var fav = new GlideRecord('x_80404_generic_portal_favorite');
+    fav.get(id);
+    var oldIndex = fav.getValue('order');
+
+    if(fav.deleteRecord()) {
+      this.reorderFavorites(null, oldIndex);
+    }
+  },
+  
+  formatFavorite: function(fav) {
+    var item = {};
+
+    item.type = 'favorite';
+    item.table = fav.getValue('table');
+    item.document_id = fav.getValue('document');
+    item.order = fav.getValue('order');
+    item.sys_id = fav.getValue('sys_id');
+    item.url_target = '_parent';
+    
+    if(item.table == 'kb_knowledge') {
+      item.href = '?id=kb_article&sys_id=' + item.document_id;
+      item.label = fav.document.short_description.getDisplayValue();
+      item.image = fav.document.image.getDisplayValue();
+      item.icon = 'fa-info';
+
+    } else if(item.table.substring(0, 3) == 'sc_') {
+      item.href = '?id=sc_cat_item&sys_id=' + item.document_id;
+      
+      var catItem = new GlideRecord(fav.getValue("table"));
+      catItem.get(fav.document.sys_id);
+      item.label = catItem.getDisplayValue("name");
+      item.image = catItem.picture.getDisplayValue();
+      item.icon = 'fa-shopping-cart';
+        
+    }
+
+    return item;
+  },
+    type: 'portalFavorites'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>workhstayh</sys_created_by>
+        <sys_created_on>2018-08-16 06:06:38</sys_created_on>
+        <sys_id>866d9a8cdb806700329ffe1ebf9619f9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>portalFavorites</sys_name>
+        <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+        <sys_update_name>sys_script_include_866d9a8cdb806700329ffe1ebf9619f9</sys_update_name>
+        <sys_updated_by>workhstayh</sys_updated_by>
+        <sys_updated_on>2018-08-16 07:15:10</sys_updated_on>
+    </sys_script_include>
+</record_update>

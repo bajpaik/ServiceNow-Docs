@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="x_80404_generic_description_about_this_table" label="Description about this table" language="en" table="sys_db_object">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>x_80404_generic_description_about_this_table</element>
+            <help/>
+            <hint/>
+            <label>Description about this table</label>
+            <language>en</language>
+            <name>sys_db_object</name>
+            <plural>Description about this tables</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>workhstayh</sys_created_by>
+            <sys_created_on>2018-08-16 05:31:53</sys_created_on>
+            <sys_id>a9161e48db806700329ffe1ebf961941</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Description about this table</sys_name>
+            <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+            <sys_update_name>sys_documentation_sys_db_object_x_80404_generic_description_about_this_table_en</sys_update_name>
+            <sys_updated_by>workhstayh</sys_updated_by>
+            <sys_updated_on>2018-08-16 05:31:53</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

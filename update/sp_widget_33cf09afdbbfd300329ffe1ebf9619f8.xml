@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link/>
+        <name>test</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[
+	 
+data.items = [];
+data.userName = gs.getUserDisplayName();
+var gr = new GlideRecord("incident");
+gr.query();
+while(gr.next() && data.items.length < 10) {
+    if ($sp.canReadRecord(gr)) {
+        data.items.push(gr.getDisplayValue("number"));
+    }
+}
+
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>workhstayh</sys_created_by>
+        <sys_created_on>2018-08-14 11:08:54</sys_created_on>
+        <sys_id>33cf09afdbbfd300329ffe1ebf9619f8</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+        <sys_update_name>sp_widget_33cf09afdbbfd300329ffe1ebf9619f8</sys_update_name>
+        <sys_updated_by>workhstayh</sys_updated_by>
+        <sys_updated_on>2018-08-14 13:12:33</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default">
+    <div class="panel-heading">Hi, {{c.data.userName}}!</div>
+    <div class="panel-body">
+        Here are some things you can order:
+        <ul><li ng-repeat="item in c.data.items">{{item}}</li></ul>
+    </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

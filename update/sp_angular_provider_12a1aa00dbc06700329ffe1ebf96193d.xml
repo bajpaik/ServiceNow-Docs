@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_angular_provider">
+    <sp_angular_provider action="INSERT_OR_UPDATE">
+        <name>favoriteToggle</name>
+        <script><![CDATA[//This directive is used to provide a common HTML template to be used as the toggle link. Notice that we reference the above service in two ways:
+
+//Attach portalFavorites to the directive file via the Required Providers related list.
+//Inject the service into the directive's function by name.
+
+function favoriteToggle(portalFavorites) {
+  return {
+    restrict: 'E',
+    scope: {
+      item: "="
+    },
+    replace: true,
+    link: function(scope) {
+      scope.favorites = portalFavorites;
+    },
+    template: '<div class="ht-portal-favorite-toggle">' +
+      '<a href="javascript:void(0)" ng-click="favorites.toggleFavorite(item)">' +
+      '<i class="fa" ng-class="item.isFavorite ? \'fa-heart\' : \'fa-heart-o\'"></i>' +
+      '</a>' +
+      '</div>'
+  };
+}]]></script>
+        <sys_class_name>sp_angular_provider</sys_class_name>
+        <sys_created_by>workhstayh</sys_created_by>
+        <sys_created_on>2018-08-16 06:24:18</sys_created_on>
+        <sys_id>12a1aa00dbc06700329ffe1ebf96193d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>favoriteToggle</sys_name>
+        <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+        <sys_update_name>sp_angular_provider_12a1aa00dbc06700329ffe1ebf96193d</sys_update_name>
+        <sys_updated_by>workhstayh</sys_updated_by>
+        <sys_updated_on>2018-08-16 06:24:18</sys_updated_on>
+        <type>directive</type>
+    </sp_angular_provider>
+</record_update>

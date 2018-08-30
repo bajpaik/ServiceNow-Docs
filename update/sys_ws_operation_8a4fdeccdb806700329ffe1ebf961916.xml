@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>deleteFavorite </name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+var data = request.body.data;
+  var result;
+
+  var fav = new GlideRecord('x_80404_generic_portal_favorite');
+  fav.addQuery('user', gs.getUserID());
+  fav.addQuery('table', data.table);
+  fav.addQuery('document', data.document);
+  fav.query();
+  if(fav.next()) {
+    var oldIndex = fav.getValue('u_order');
+    if(fav.deleteRecord()) {
+      result = 'success';
+      new portalFavorites().reorderFavorites(null, oldIndex);
+
+    } else {
+      result = 'fail';
+
+    }
+  } else {
+    result = 'fail';
+
+  }
+
+  var body = {data: result};
+
+  response.setBody(body);
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_80404_generic/portalfavorites/deleteFavorite</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/deleteFavorite</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>workhstayh</sys_created_by>
+        <sys_created_on>2018-08-16 06:13:33</sys_created_on>
+        <sys_id>8a4fdeccdb806700329ffe1ebf961916</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>deleteFavorite </sys_name>
+        <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+        <sys_update_name>sys_ws_operation_8a4fdeccdb806700329ffe1ebf961916</sys_update_name>
+        <sys_updated_by>workhstayh</sys_updated_by>
+        <sys_updated_on>2018-08-16 06:18:12</sys_updated_on>
+        <web_service_definition display_value="portalFavorites">9b2e92ccdb806700329ffe1ebf961992</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
