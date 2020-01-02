@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="9806ce55dbf4b30c329ffe1ebf961917" sys_domain="global" table="csm_consumer_user" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>workhstayh</sys_created_by>
+            <sys_created_on>2019-04-13 04:32:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9c06ca19dbf4b30c329ffe1ebf96198e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="csm_consumer_user" name="csm_consumer_user" sys_domain="global" view="Default view">9806ce55dbf4b30c329ffe1ebf961917</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="csm_consumer_user" sys_domain="global" view="Default view">9006ca19dbf4b30c329ffe1ebf961983</sys_ui_section>
+            <sys_updated_by>workhstayh</sys_updated_by>
+            <sys_updated_on>2019-04-13 04:32:17</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>workhstayh</sys_created_by>
+            <sys_created_on>2019-04-13 04:32:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d406ce55dbf4b30c329ffe1ebf96191a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="csm_consumer_user" name="csm_consumer_user" sys_domain="global" view="Default view">9806ce55dbf4b30c329ffe1ebf961917</sys_ui_form>
+            <sys_ui_section caption="LDAP Data" display_value="LDAP Data" name="csm_consumer_user" sys_domain="global" view="Default view">9806ce55dbf4b30c329ffe1ebf961919</sys_ui_section>
+            <sys_updated_by>workhstayh</sys_updated_by>
+            <sys_updated_on>2019-04-13 04:32:17</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>workhstayh</sys_created_by>
+            <sys_created_on>2019-04-13 04:49:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>42f90299dbf4b30c329ffe1ebf961964</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="csm_consumer_user" name="csm_consumer_user" sys_domain="global" view="Default view">9806ce55dbf4b30c329ffe1ebf961917</sys_ui_form>
+            <sys_ui_section caption="Round Robin Assignment" display_value="Round Robin Assignment" name="csm_consumer_user" sys_domain="global" view="Default view">02f90299dbf4b30c329ffe1ebf961962</sys_ui_section>
+            <sys_updated_by>workhstayh</sys_updated_by>
+            <sys_updated_on>2019-04-13 04:49:35</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>csm_consumer_user</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>workhstayh</sys_created_by>
+            <sys_created_on>2019-04-13 04:32:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9806ce55dbf4b30c329ffe1ebf961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>csm_consumer_user</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+            <sys_update_name>sys_ui_form_sections_9806ce55dbf4b30c329ffe1ebf961917</sys_update_name>
+            <sys_updated_by>workhstayh</sys_updated_by>
+            <sys_updated_on>2019-04-13 04:32:16</sys_updated_on>
+            <sys_user/>
+            <u_sys_id/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

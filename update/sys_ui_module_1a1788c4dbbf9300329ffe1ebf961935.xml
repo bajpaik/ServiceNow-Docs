@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="sys_ui_module">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
     <sys_ui_module action="INSERT_OR_UPDATE">
         <active>true</active>
         <application display_value="Generic">b8bce6cfdb879300329ffe1ebf961961</application>
@@ -24,6 +23,7 @@
         <sys_updated_by>workhstayh</sys_updated_by>
         <sys_updated_on>2018-08-03 08:51:28</sys_updated_on>
         <table>x_80404_generic_github_jobs</table>
+        <u_sys_id/>
         <uncancelable>false</uncancelable>
         <view_name/>
     </sys_ui_module>

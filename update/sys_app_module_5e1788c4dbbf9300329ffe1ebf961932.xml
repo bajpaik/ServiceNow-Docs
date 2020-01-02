@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="sys_app_module">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
         <application display_value="Generic">14bc66cfdb879300329ffe1ebf9619ef</application>
@@ -37,6 +36,7 @@
         <sys_updated_on>2018-08-03 08:51:28</sys_updated_on>
         <timeline_page/>
         <title>GitHub Jobs</title>
+        <u_sys_id/>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

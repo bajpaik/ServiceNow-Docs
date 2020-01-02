@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_angular_provider">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_angular_provider">
     <sp_angular_provider action="INSERT_OR_UPDATE">
         <name>portalFavorites</name>
         <script><![CDATA[//This service is used to provide reusable functions for adding and removing favorites. Since Angular Providers don't have a server script, like a widget does, I used a scripted REST API to handle the server side functions.
@@ -74,5 +73,6 @@ function($http, $q) {
         <sys_updated_by>workhstayh</sys_updated_by>
         <sys_updated_on>2018-08-16 07:22:15</sys_updated_on>
         <type>service</type>
+        <u_sys_id/>
     </sp_angular_provider>
 </record_update>

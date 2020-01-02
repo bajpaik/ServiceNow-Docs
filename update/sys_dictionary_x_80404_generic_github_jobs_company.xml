@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_dictionary action="INSERT_OR_UPDATE" element="company" table="x_80404_generic_github_jobs">
         <active>true</active>
         <array>false</array>
@@ -12,7 +11,7 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice/>
+        <choice>1</choice>
         <choice_field/>
         <choice_table/>
         <column_label>Company</column_label>
@@ -33,7 +32,7 @@
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Choice">choice</internal_type>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
         <name>x_80404_generic_github_jobs</name>
@@ -55,16 +54,17 @@
         <sys_created_by>workhstayh</sys_created_by>
         <sys_created_on>2018-08-03 09:20:52</sys_created_on>
         <sys_id>84679056db335300329ffe1ebf96193f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Company</sys_name>
         <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
         <sys_update_name>sys_dictionary_x_80404_generic_github_jobs_company</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-08-10 09:48:56</sys_updated_on>
+        <sys_updated_by>workhstayh</sys_updated_by>
+        <sys_updated_on>2018-09-05 10:13:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
+        <u_sys_id/>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>

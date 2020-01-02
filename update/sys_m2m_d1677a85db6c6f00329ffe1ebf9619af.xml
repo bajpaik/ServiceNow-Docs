@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_m2m">
+    <sys_m2m action="INSERT_OR_UPDATE">
+        <from_table>x_80404_generic_virtual_war_room</from_table>
+        <m2m_from_field>virtual_war_room</m2m_from_field>
+        <m2m_from_label>Problems</m2m_from_label>
+        <m2m_table>x_80404_generic_m2m_war_room_prob</m2m_table>
+        <m2m_to_field>problem</m2m_to_field>
+        <m2m_to_label>Virtual War Rooms</m2m_to_label>
+        <sys_class_name>sys_m2m</sys_class_name>
+        <sys_created_by>workhstayh</sys_created_by>
+        <sys_created_on>2018-09-13 07:06:33</sys_created_on>
+        <sys_id>d1677a85db6c6f00329ffe1ebf9619af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_80404_generic_m2m_war_room_prob</sys_name>
+        <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+        <sys_update_name>sys_m2m_d1677a85db6c6f00329ffe1ebf9619af</sys_update_name>
+        <sys_updated_by>workhstayh</sys_updated_by>
+        <sys_updated_on>2018-09-13 07:06:33</sys_updated_on>
+        <to_table>problem</to_table>
+        <u_sys_id/>
+    </sys_m2m>
+</record_update>

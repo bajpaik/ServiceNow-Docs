@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>incident</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="incident">assigned_toISEMPTY^assignment_groupVALCHANGES^assignment_group=d625dccec0a8016700a222a0f7900d06^EQ<item endquery="false" field="assigned_to" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+            <item endquery="false" field="assignment_group" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item display_table="sys_user_group" display_value="Service Desk" endquery="false" field="assignment_group" goto="false" newquery="false" operator="=" or="false" value="d625dccec0a8016700a222a0f7900d06"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>UFI- Round Robin Assignment </name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[setAssignedTo();
+
+function setAssignedTo(){
+	
+	try{
+		var grmem = new GlideRecord('sys_user_grmember');
+		grmem.addQuery('user.x_80404_generic_unavailable',false);
+		grmem.addQuery('group',current.assignment_group.sys_id);
+		grmem.query();
+		
+		var incCount = [];
+		while(grmem.next()){
+			
+			var sch = new GlideRecord('cmn_schedule');
+			sch.addQuery('sys_id',grmem.user.x_80404_generic_schedule.sys_id);
+			sch.query();
+			
+			while(sch.next()){
+				
+				var schRecord = new GlideSchedule(sch.sys_id);
+				var dateTime = new GlideDateTime();
+				if(schRecord.isInSchedule(dateTime)){
+					
+				incCount.push([grmem.user.x_80404_generic_last_assigned,grmem.user.sys_id]);
+					
+				}
+				
+			}
+		}
+		
+		incCount.sort();
+		var userRec = incCount[0];
+		userRec = userRec.toString();
+		
+		var charInd = userRec.indexOf(',');
+		var assignedTo = userRec.substring(charInd+1);
+		
+		current.assigned_to = assignedTo;
+		
+		
+	}
+	
+	catch(err){
+			gs.addErrorMessage('Error detected in Auto-Assign Incident Assignment Script, function setAssignedTo(), error: ' + err.message);
+		
+	}
+}]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>workhstayh</sys_created_by>
+        <sys_created_on>2019-04-13 05:04:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>83d28255dbf4b30c329ffe1ebf9619c1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>UFI- Round Robin Assignment </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+        <sys_update_name>sys_script_83d28255dbf4b30c329ffe1ebf9619c1</sys_update_name>
+        <sys_updated_by>workhstayh</sys_updated_by>
+        <sys_updated_on>2019-04-13 08:13:13</sys_updated_on>
+        <template/>
+        <u_sys_id/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=83d28255dbf4b30c329ffe1ebf9619c1"/>
+</record_update>

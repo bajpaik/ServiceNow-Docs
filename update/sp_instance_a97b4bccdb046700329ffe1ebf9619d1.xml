@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_instance">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
     <sp_instance action="INSERT_OR_UPDATE">
         <active>true</active>
         <class_name/>
@@ -26,6 +25,7 @@
         <sys_updated_by>workhstayh</sys_updated_by>
         <sys_updated_on>2018-08-16 09:25:05</sys_updated_on>
         <title/>
+        <u_sys_id/>
         <url/>
         <widget_parameters/>
     </sp_instance>

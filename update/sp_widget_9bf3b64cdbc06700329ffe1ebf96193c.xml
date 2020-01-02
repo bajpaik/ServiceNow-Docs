@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_widget">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>kb</category>
         <client_script><![CDATA[function ($scope, spUtil, $sce, $rootScope, $timeout) {
@@ -154,5 +153,7 @@ function showStarRating() {
 <div ng-if="!data.isvalid">
   ${Article not found}
 </div>]]></template>
+        <u_record_sysid/>
+        <u_sys_id/>
     </sp_widget>
 </record_update>

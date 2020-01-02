@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_dependency">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency">
     <sp_dependency action="INSERT_OR_UPDATE">
         <module>sortable</module>
         <name>sortable</name>
@@ -17,5 +16,6 @@
         <sys_update_name>sp_dependency_84d82e84dbc06700329ffe1ebf9619a6</sys_update_name>
         <sys_updated_by>workhstayh</sys_updated_by>
         <sys_updated_on>2018-08-16 06:54:20</sys_updated_on>
+        <u_sys_id/>
     </sp_dependency>
 </record_update>

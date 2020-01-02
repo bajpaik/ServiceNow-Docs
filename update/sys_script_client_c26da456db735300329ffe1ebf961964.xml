@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="sys_script_client">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
     <sys_script_client action="INSERT_OR_UPDATE">
         <active>true</active>
         <applies_extended>false</applies_extended>
@@ -8,6 +7,7 @@
 For this , a email script named "one_click_approval_links" is made and email template "request.itil.approve.role" is modified at the end with this email script</description>
         <field>approval_column</field>
         <global>true</global>
+        <isolate_script>false</isolate_script>
         <messages>A Better, One-Click Approval</messages>
         <name>Process approval system</name>
         <order/>
@@ -104,6 +104,7 @@ function checkApprover() {
         <sys_updated_on>2018-08-10 11:37:52</sys_updated_on>
         <table>sysapproval_approver</table>
         <type>onLoad</type>
+        <u_sys_id/>
         <ui_type>10</ui_type>
         <view/>
     </sys_script_client>

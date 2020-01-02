@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="d_o_j" label="D.O.J" language="en" table="x_80404_generic_table">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>d_o_j</element>
+            <help/>
+            <hint/>
+            <label>D.O.J</label>
+            <language>en</language>
+            <name>x_80404_generic_table</name>
+            <plural>D.O.Js</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>workhstayh</sys_created_by>
+            <sys_created_on>2018-10-01 07:41:56</sys_created_on>
+            <sys_id>4ffcef72dbf02300329ffe1ebf961979</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>D.O.J</sys_name>
+            <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+            <sys_update_name>sys_documentation_x_80404_generic_table_d_o_j_en</sys_update_name>
+            <sys_updated_by>workhstayh</sys_updated_by>
+            <sys_updated_on>2018-10-01 07:41:56</sys_updated_on>
+            <u_sys_id/>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

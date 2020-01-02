@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>d_o_j</field>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>select future date</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+ var getDateTime = new GlideAjax('future_date_selection');
+	getDateTime.addParam('sysparm_name','futureDate');
+	getDateTime.addParam('sysparm_date', newValue);
+	
+	
+	getDateTime.getXML(function getAnswer(ans){
+		
+		           var answer = ans.responseXML.documentElement.getAttribute("answer");
+
+   
+		
+		alert(answer);
+
+         if(answer=='false'){
+			 
+			 g_form.setValue('d_o_j',"");
+			 
+		 }
+
+		
+		
+	});
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>workhstayh</sys_created_by>
+        <sys_created_on>2018-10-01 08:24:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fc24fbbadbf02300329ffe1ebf961957</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>select future date</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+        <sys_update_name>sys_script_client_fc24fbbadbf02300329ffe1ebf961957</sys_update_name>
+        <sys_updated_by>workhstayh</sys_updated_by>
+        <sys_updated_on>2018-10-01 08:53:18</sys_updated_on>
+        <table>x_80404_generic_table</table>
+        <type>onChange</type>
+        <u_sys_id/>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

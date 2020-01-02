@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Generic M2m War Room Prob" max_length="40" name="x_80404_generic_m2m_war_room_prob" type="collection">
+        <element label="Problem" max_length="32" name="problem" reference="problem" type="reference"/>
+        <index name="index">
+            <element name="problem"/>
+        </index>
+    </element>
+</database>

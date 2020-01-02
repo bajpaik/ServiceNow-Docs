@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_widget">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
         <client_script><![CDATA[function() {
@@ -141,5 +140,7 @@
         <sys_updated_by>workhstayh</sys_updated_by>
         <sys_updated_on>2018-08-10 09:47:27</sys_updated_on>
         <template><![CDATA[<div><!-- your widget template --></div>]]></template>
+        <u_record_sysid/>
+        <u_sys_id/>
     </sp_widget>
 </record_update>

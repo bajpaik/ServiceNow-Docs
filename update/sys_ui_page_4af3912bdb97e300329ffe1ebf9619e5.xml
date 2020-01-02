@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[function myFunction(val) {
+  alert(val);
+}
+
+if ("${sysparm_checked_out}" == "true") {
+  alert('"${sysparm_checked_out}"');
+}
+]]></client_script>
+        <description>To prevent using gel, we can pass in the current value of the select box using this.value</description>
+        <direct>false</direct>
+        <endpoint>x_80404_generic_Triggering on change for select box.do</endpoint>
+        <html><![CDATA[<g:evaluate>
+  var choiceList = new GlideChoiceList();
+  choiceList.add('', '--None--');
+  choiceList.add('123', 'OneTwoThree');
+  choiceList.add('FourFiveSix', '456');
+</g:evaluate>
+
+<select id="document_select" name="document_select" onchange="myFunction(this.value)">
+  <g:options choiceList="${choiceList}" choiceValue="" />
+</select>
+
+<g:evaluate var="jvar_document_array"
+expression="RP.getWindowProperties().get('sysparm_document_array')" />
+
+<script>
+  alert('"${jvar_document_array}"');
+</script>
+
+]]></html>
+        <name>Triggering on change for select box</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>workhstayh</sys_created_by>
+        <sys_created_on>2019-02-04 11:06:26</sys_created_on>
+        <sys_id>4af3912bdb97e300329ffe1ebf9619e5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Triggering on change for select box</sys_name>
+        <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+        <sys_update_name>sys_ui_page_4af3912bdb97e300329ffe1ebf9619e5</sys_update_name>
+        <sys_updated_by>workhstayh</sys_updated_by>
+        <sys_updated_on>2019-02-04 11:09:40</sys_updated_on>
+        <u_sys_id/>
+    </sys_ui_page>
+</record_update>

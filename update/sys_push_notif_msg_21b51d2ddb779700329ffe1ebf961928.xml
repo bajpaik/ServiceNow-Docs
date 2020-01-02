@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_push_notif_msg">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_push_notif_msg">
     <sys_push_notif_msg action="INSERT_OR_UPDATE">
         <message_string>Hola! un nouvel enregistrement a été inséré  ${number}</message_string>
         <name>New Record on Generic</name>
-        <push_app display_value="ServiceNow Mobile Application">ab704041ff1102009738ffffffffff33</push_app>
+        <push_app display_value="ServiceNow Classic Mobile Application">ab704041ff1102009738ffffffffff33</push_app>
         <push_message_content display_value="Buttons to respond to incident">113435d1dbbf5700329ffe1ebf961952</push_message_content>
         <subject/>
         <sys_class_name>sys_push_notif_msg</sys_class_name>
@@ -20,5 +19,6 @@
         <sys_updated_on>2018-08-09 09:33:41</sys_updated_on>
         <table>x_80404_generic_table</table>
         <type>push</type>
+        <u_sys_id/>
     </sys_push_notif_msg>
 </record_update>

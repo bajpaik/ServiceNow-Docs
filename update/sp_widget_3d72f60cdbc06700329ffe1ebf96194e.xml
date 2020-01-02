@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_widget">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>sc</category>
         <client_script><![CDATA[function ($scope, $http, spScUtil, spUtil, nowAttachmentHandler, $rootScope, $sanitize, $window, $sce, i18n, $timeout, $log, spAriaUtil, $document, spModal) {
@@ -975,5 +974,7 @@
 </div>
 <div ng-if="::!data.recordFound" class="alert alert-info">{{::m.invalidRecordMsg}}</div>
 <now-message key="Added item to shopping cart" value="${Added item to shopping cart}"/>]]></template>
+        <u_record_sysid/>
+        <u_sys_id/>
     </sp_widget>
 </record_update>

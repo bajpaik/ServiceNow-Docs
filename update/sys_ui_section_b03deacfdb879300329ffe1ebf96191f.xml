@@ -1,115 +1,198 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="b03deacfdb879300329ffe1ebf96191f" sys_domain="global" table="x_80404_generic_table" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>number</element>
+            <element>.begin_split</element>
             <position>0</position>
             <sys_created_by>workhstayh</sys_created_by>
-            <sys_created_on>2018-08-08 06:46:28</sys_created_on>
-            <sys_id>7b6a95eddb779700329ffe1ebf961995</sys_id>
+            <sys_created_on>2018-10-01 07:41:56</sys_created_on>
+            <sys_id>c3fcef72dbf02300329ffe1ebf961982</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_table" sys_domain="global" view="Default view">b03deacfdb879300329ffe1ebf96191f</sys_ui_section>
             <sys_updated_by>workhstayh</sys_updated_by>
-            <sys_updated_on>2018-08-08 06:46:28</sys_updated_on>
+            <sys_updated_on>2018-10-01 07:41:56</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>1</position>
+            <sys_created_by>workhstayh</sys_created_by>
+            <sys_created_on>2018-10-01 07:41:56</sys_created_on>
+            <sys_id>47fcef72dbf02300329ffe1ebf961982</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_table" sys_domain="global" view="Default view">b03deacfdb879300329ffe1ebf96191f</sys_ui_section>
+            <sys_updated_by>workhstayh</sys_updated_by>
+            <sys_updated_on>2018-10-01 07:41:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>email</element>
+            <position>2</position>
+            <sys_created_by>workhstayh</sys_created_by>
+            <sys_created_on>2018-10-01 07:41:56</sys_created_on>
+            <sys_id>c7fcef72dbf02300329ffe1ebf961982</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_table" sys_domain="global" view="Default view">b03deacfdb879300329ffe1ebf96191f</sys_ui_section>
+            <sys_updated_by>workhstayh</sys_updated_by>
+            <sys_updated_on>2018-10-01 07:41:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>your_name</element>
-            <position>1</position>
+            <position>3</position>
             <sys_created_by>workhstayh</sys_created_by>
-            <sys_created_on>2018-08-08 06:46:28</sys_created_on>
-            <sys_id>fb6a95eddb779700329ffe1ebf961995</sys_id>
+            <sys_created_on>2018-10-01 07:41:56</sys_created_on>
+            <sys_id>4bfcef72dbf02300329ffe1ebf961982</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_table" sys_domain="global" view="Default view">b03deacfdb879300329ffe1ebf96191f</sys_ui_section>
             <sys_updated_by>workhstayh</sys_updated_by>
-            <sys_updated_on>2018-08-08 06:46:28</sys_updated_on>
+            <sys_updated_on>2018-10-01 07:41:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_location</element>
-            <position>2</position>
-            <sys_created_by>workhstayh</sys_created_by>
-            <sys_created_on>2018-08-08 06:46:28</sys_created_on>
-            <sys_id>7f6a95eddb779700329ffe1ebf961995</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_table" sys_domain="global" view="Default view">b03deacfdb879300329ffe1ebf96191f</sys_ui_section>
-            <sys_updated_by>workhstayh</sys_updated_by>
-            <sys_updated_on>2018-08-08 06:46:28</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_father_name</element>
-            <position>3</position>
-            <sys_created_by>workhstayh</sys_created_by>
-            <sys_created_on>2018-08-08 06:46:28</sys_created_on>
-            <sys_id>ff6a95eddb779700329ffe1ebf961995</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_table" sys_domain="global" view="Default view">b03deacfdb879300329ffe1ebf96191f</sys_ui_section>
-            <sys_updated_by>workhstayh</sys_updated_by>
-            <sys_updated_on>2018-08-08 06:46:28</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_mother_name</element>
             <position>4</position>
             <sys_created_by>workhstayh</sys_created_by>
-            <sys_created_on>2018-08-08 06:46:28</sys_created_on>
-            <sys_id>736a95eddb779700329ffe1ebf961996</sys_id>
+            <sys_created_on>2018-10-01 07:41:56</sys_created_on>
+            <sys_id>cbfcef72dbf02300329ffe1ebf961982</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_table" sys_domain="global" view="Default view">b03deacfdb879300329ffe1ebf96191f</sys_ui_section>
             <sys_updated_by>workhstayh</sys_updated_by>
-            <sys_updated_on>2018-08-08 06:46:28</sys_updated_on>
+            <sys_updated_on>2018-10-01 07:41:56</sys_updated_on>
             <sys_user/>
             <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>workhstayh</sys_created_by>
+            <sys_created_on>2018-10-01 07:41:56</sys_created_on>
+            <sys_id>4ffcef72dbf02300329ffe1ebf961982</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_table" sys_domain="global" view="Default view">b03deacfdb879300329ffe1ebf96191f</sys_ui_section>
+            <sys_updated_by>workhstayh</sys_updated_by>
+            <sys_updated_on>2018-10-01 07:41:56</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>user_name</element>
+            <position>6</position>
+            <sys_created_by>workhstayh</sys_created_by>
+            <sys_created_on>2018-10-01 07:41:56</sys_created_on>
+            <sys_id>cffcef72dbf02300329ffe1ebf961982</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_table" sys_domain="global" view="Default view">b03deacfdb879300329ffe1ebf96191f</sys_ui_section>
+            <sys_updated_by>workhstayh</sys_updated_by>
+            <sys_updated_on>2018-10-01 07:41:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>domain</element>
+            <position>7</position>
+            <sys_created_by>workhstayh</sys_created_by>
+            <sys_created_on>2018-10-01 07:41:56</sys_created_on>
+            <sys_id>43fcef72dbf02300329ffe1ebf961983</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_table" sys_domain="global" view="Default view">b03deacfdb879300329ffe1ebf96191f</sys_ui_section>
+            <sys_updated_by>workhstayh</sys_updated_by>
+            <sys_updated_on>2018-10-01 07:41:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>top_level_domain_name</element>
+            <position>8</position>
+            <sys_created_by>workhstayh</sys_created_by>
+            <sys_created_on>2018-10-01 07:41:56</sys_created_on>
+            <sys_id>c3fcef72dbf02300329ffe1ebf961983</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_table" sys_domain="global" view="Default view">b03deacfdb879300329ffe1ebf96191f</sys_ui_section>
+            <sys_updated_by>workhstayh</sys_updated_by>
+            <sys_updated_on>2018-10-01 07:41:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>d_o_j</element>
+            <position>9</position>
+            <sys_created_by>workhstayh</sys_created_by>
+            <sys_created_on>2018-10-01 07:41:56</sys_created_on>
+            <sys_id>47fcef72dbf02300329ffe1ebf961983</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_table" sys_domain="global" view="Default view">b03deacfdb879300329ffe1ebf96191f</sys_ui_section>
+            <sys_updated_by>workhstayh</sys_updated_by>
+            <sys_updated_on>2018-10-01 07:41:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>10</position>
+            <sys_created_by>workhstayh</sys_created_by>
+            <sys_created_on>2018-10-01 07:41:56</sys_created_on>
+            <sys_id>c7fcef72dbf02300329ffe1ebf961983</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_table" sys_domain="global" view="Default view">b03deacfdb879300329ffe1ebf96191f</sys_ui_section>
+            <sys_updated_by>workhstayh</sys_updated_by>
+            <sys_updated_on>2018-10-01 07:41:56</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>journal_input_field</element>
-            <position>5</position>
+            <position>11</position>
             <sys_created_by>workhstayh</sys_created_by>
-            <sys_created_on>2018-08-08 06:46:28</sys_created_on>
-            <sys_id>f36a95eddb779700329ffe1ebf961996</sys_id>
+            <sys_created_on>2018-10-01 07:41:56</sys_created_on>
+            <sys_id>4bfcef72dbf02300329ffe1ebf961983</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_table" sys_domain="global" view="Default view">b03deacfdb879300329ffe1ebf96191f</sys_ui_section>
             <sys_updated_by>workhstayh</sys_updated_by>
-            <sys_updated_on>2018-08-08 06:46:28</sys_updated_on>
+            <sys_updated_on>2018-10-01 07:41:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>journal_list</element>
-            <position>6</position>
+            <position>12</position>
             <sys_created_by>workhstayh</sys_created_by>
-            <sys_created_on>2018-08-08 06:46:28</sys_created_on>
-            <sys_id>776a95eddb779700329ffe1ebf961996</sys_id>
+            <sys_created_on>2018-10-01 07:41:56</sys_created_on>
+            <sys_id>cbfcef72dbf02300329ffe1ebf961983</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_table" sys_domain="global" view="Default view">b03deacfdb879300329ffe1ebf96191f</sys_ui_section>
             <sys_updated_by>workhstayh</sys_updated_by>
-            <sys_updated_on>2018-08-08 06:46:28</sys_updated_on>
+            <sys_updated_on>2018-10-01 07:41:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>journal</element>
-            <position>7</position>
+            <position>13</position>
             <sys_created_by>workhstayh</sys_created_by>
-            <sys_created_on>2018-08-08 06:46:28</sys_created_on>
-            <sys_id>f76a95eddb779700329ffe1ebf961996</sys_id>
+            <sys_created_on>2018-10-01 07:41:56</sys_created_on>
+            <sys_id>4ffcef72dbf02300329ffe1ebf961983</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_table" sys_domain="global" view="Default view">b03deacfdb879300329ffe1ebf96191f</sys_ui_section>
             <sys_updated_by>workhstayh</sys_updated_by>
-            <sys_updated_on>2018-08-08 06:46:28</sys_updated_on>
+            <sys_updated_on>2018-10-01 07:41:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -135,6 +218,7 @@
             <sys_updated_on>2018-07-06 21:51:51</sys_updated_on>
             <sys_user/>
             <title>true</title>
+            <u_sys_id/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
         </sys_ui_section>

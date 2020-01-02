@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="company" table="x_80404_generic_github_jobs" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>company</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Delloite</label>
+            <language>en</language>
+            <name>x_80404_generic_github_jobs</name>
+            <sequence>1</sequence>
+            <sys_created_by>workhstayh</sys_created_by>
+            <sys_created_on>2018-09-05 10:14:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e366d6e6db102b00329ffe1ebf9619c6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>workhstayh</sys_updated_by>
+            <sys_updated_on>2018-09-05 10:14:24</sys_updated_on>
+            <value>Delloite</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>company</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Barclays Bank</label>
+            <language>en</language>
+            <name>x_80404_generic_github_jobs</name>
+            <sequence>2</sequence>
+            <sys_created_by>workhstayh</sys_created_by>
+            <sys_created_on>2018-09-05 10:16:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4a96da26db102b00329ffe1ebf9619f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>workhstayh</sys_updated_by>
+            <sys_updated_on>2018-09-05 10:16:11</sys_updated_on>
+            <value>Barclays Bank</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>company</element>
+            <name>x_80404_generic_github_jobs</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>workhstayh</sys_created_by>
+            <sys_created_on>2018-09-05 10:14:24</sys_created_on>
+            <sys_id>0f861ae6db102b00329ffe1ebf9619d4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>company</sys_name>
+            <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+            <sys_update_name>sys_choice_x_80404_generic_github_jobs_company</sys_update_name>
+            <sys_updated_by>workhstayh</sys_updated_by>
+            <sys_updated_on>2018-09-05 10:14:24</sys_updated_on>
+            <u_sys_id/>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

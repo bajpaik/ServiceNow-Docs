@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_ws_definition">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition">
     <sys_ws_definition action="INSERT_OR_UPDATE">
         <active>true</active>
         <base_uri>/api/x_80404_generic/portalfavorites</base_uri>
@@ -29,5 +28,6 @@ I used a scripted REST API to make server side functions available to my directi
         <sys_update_name>sys_ws_definition_9b2e92ccdb806700329ffe1ebf961992</sys_update_name>
         <sys_updated_by>workhstayh</sys_updated_by>
         <sys_updated_on>2018-08-16 06:31:23</sys_updated_on>
+        <u_sys_id/>
     </sys_ws_definition>
 </record_update>

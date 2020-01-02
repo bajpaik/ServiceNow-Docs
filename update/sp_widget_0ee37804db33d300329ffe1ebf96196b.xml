@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_widget">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
         <client_script><![CDATA[function() {
@@ -43,5 +42,7 @@ var response = restMessage.execute();]]></script>
         <template><![CDATA[
   
  ]]></template>
+        <u_record_sysid/>
+        <u_sys_id/>
     </sp_widget>
 </record_update>

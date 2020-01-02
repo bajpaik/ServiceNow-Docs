@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_relationship">
+    <sys_relationship action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>sys_user</basic_apply_to>
+        <basic_query_from>sc_task</basic_query_from>
+        <insert_callback/>
+        <name>Tasks Requested for User</name>
+        <query_from/>
+        <query_with><![CDATA[(function refineQuery(current, parent) {
+//parent object corresponds to table selected in "Applies to table"
+	var parentsysid = parent.getValue('sys_id');
+	
+	gs.addInfoMessagege(parentsysid + " : This is a user sys_id, For more info, see the \"sys_relationship\" table record \"Tasks Requested for User\", that helps to see Catalog Tasks associated with requests that were requested for a given user, in a related list on that user's record in the sys_user table,");
+	
+	current.addQuery('request.requested_for',parentsysid);
+	
+	gs.addInfoMessage('Ensuring through \"sys_relationship\" table record \"Tasks Requested for User\" that the requested_for field on the record in the request Reference field, is equal to the sys_id of the record that this related list is displayed on.');
+	
+	//This query effectively states: Ensure that the requested_for field on the record in the request Reference field, is equal to the sys_id of the record that this related list is displayed on.
+	
+
+})(current, parent);]]></query_with>
+        <reference_field>sn_hr_le_activity</reference_field>
+        <related_list/>
+        <simple_reference>false</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>workhstayh</sys_created_by>
+        <sys_created_on>2018-09-13 13:00:19</sys_created_on>
+        <sys_id>d3a5c41ddbacaf00329ffe1ebf961969</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Tasks Requested for User</sys_name>
+        <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+        <sys_update_name>sys_relationship_d3a5c41ddbacaf00329ffe1ebf961969</sys_update_name>
+        <sys_updated_by>workhstayh</sys_updated_by>
+        <sys_updated_on>2020-01-01 07:50:57</sys_updated_on>
+        <u_sys_id/>
+    </sys_relationship>
+    <sys_translated_text action="delete_multiple" query="documentkey=d3a5c41ddbacaf00329ffe1ebf961969"/>
+</record_update>

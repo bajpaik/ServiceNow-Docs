@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_documentation element="order" label="Order" language="en" table="x_80404_generic_portal_favorite">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>order</element>
@@ -21,6 +20,7 @@
             <sys_update_name>sys_documentation_x_80404_generic_portal_favorite_order_en</sys_update_name>
             <sys_updated_by>workhstayh</sys_updated_by>
             <sys_updated_on>2018-08-16 05:59:19</sys_updated_on>
+            <u_sys_id/>
             <url/>
             <url_target/>
         </sys_documentation>

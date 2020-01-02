@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_embedded_help_role">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
     <sys_embedded_help_role action="INSERT_OR_UPDATE">
         <order>1000</order>
         <role display_value="x_80404_generic.github_jobs_user" name="x_80404_generic.github_jobs_user">4a1788c4dbbf9300329ffe1ebf96192b</role>
@@ -15,5 +14,6 @@
         <sys_update_name>sys_embedded_help_role_0e1788c4dbbf9300329ffe1ebf96192d</sys_update_name>
         <sys_updated_by>workhstayh</sys_updated_by>
         <sys_updated_on>2018-08-03 08:51:28</sys_updated_on>
+        <u_sys_id/>
     </sys_embedded_help_role>
 </record_update>

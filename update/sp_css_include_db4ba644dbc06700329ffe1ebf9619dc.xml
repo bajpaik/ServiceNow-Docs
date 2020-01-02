@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_css_include">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include">
     <sp_css_include action="INSERT_OR_UPDATE">
         <name>.ht-porta-favorite-toggle</name>
         <source>local</source>
@@ -16,6 +15,7 @@
         <sys_update_name>sp_css_include_db4ba644dbc06700329ffe1ebf9619dc</sys_update_name>
         <sys_updated_by>workhstayh</sys_updated_by>
         <sys_updated_on>2018-08-16 07:04:34</sys_updated_on>
+        <u_sys_id/>
         <url/>
     </sp_css_include>
 </record_update>

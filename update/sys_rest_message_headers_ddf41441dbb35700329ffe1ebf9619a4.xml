@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_rest_message_headers">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_headers">
     <sys_rest_message_headers action="INSERT_OR_UPDATE">
         <name>Accept</name>
         <rest_message display_value="The GitHub Jobs API">d4fc5a37db6b9300329ffe1ebf96197b</rest_message>
@@ -15,6 +14,7 @@
         <sys_update_name>sys_rest_message_headers_ddf41441dbb35700329ffe1ebf9619a4</sys_update_name>
         <sys_updated_by>workhstayh</sys_updated_by>
         <sys_updated_on>2018-08-06 12:27:06</sys_updated_on>
+        <u_sys_id/>
         <value>application/json</value>
     </sys_rest_message_headers>
 </record_update>

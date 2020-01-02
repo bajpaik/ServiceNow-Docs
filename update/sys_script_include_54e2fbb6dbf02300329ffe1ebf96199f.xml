@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_80404_generic.future_date_selection</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>future_date_selection</name>
+        <script><![CDATA[var future_date_selection = Class.create();
+future_date_selection.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	futureDate : function(){
+		var start = this.getParameter('sysparm_date'); //passing the parameter from the client script
+		
+		var date = new GlideDateTime().getDisplayValue();
+		
+	
+	if(start<date||start==date){
+		
+		return false;
+		
+		
+	}
+		else{
+			
+			return true;
+		}
+	
+	
+	
+},
+    type: 'future_date_selection'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>workhstayh</sys_created_by>
+        <sys_created_on>2018-10-01 08:25:33</sys_created_on>
+        <sys_id>54e2fbb6dbf02300329ffe1ebf96199f</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>future_date_selection</sys_name>
+        <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+        <sys_update_name>sys_script_include_54e2fbb6dbf02300329ffe1ebf96199f</sys_update_name>
+        <sys_updated_by>workhstayh</sys_updated_by>
+        <sys_updated_on>2018-10-01 08:50:40</sys_updated_on>
+        <u_sys_id/>
+    </sys_script_include>
+</record_update>

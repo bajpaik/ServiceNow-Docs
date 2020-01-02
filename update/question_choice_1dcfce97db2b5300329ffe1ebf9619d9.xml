@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="question_choice">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
     <question_choice action="INSERT_OR_UPDATE">
         <misc>0</misc>
         <order>300</order>
@@ -18,6 +17,7 @@
         <sys_updated_by>workhstayh</sys_updated_by>
         <sys_updated_on>2018-08-01 10:53:26</sys_updated_on>
         <text>Modify</text>
+        <u_sys_id/>
         <value>modify</value>
     </question_choice>
     <fx_price action="delete_multiple" query="id=1dcfce97db2b5300329ffe1ebf9619d9"/>

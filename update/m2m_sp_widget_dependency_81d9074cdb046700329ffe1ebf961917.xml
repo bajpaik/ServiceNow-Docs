@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="m2m_sp_widget_dependency">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency">
     <m2m_sp_widget_dependency action="INSERT_OR_UPDATE">
         <sp_dependency display_value="sortable">84d82e84dbc06700329ffe1ebf9619a6</sp_dependency>
         <sp_widget display_value="Manage Favorites">8fb56ac0dbc06700329ffe1ebf961908</sp_widget>
@@ -15,5 +14,6 @@
         <sys_update_name>m2m_sp_widget_dependency_81d9074cdb046700329ffe1ebf961917</sys_update_name>
         <sys_updated_by>workhstayh</sys_updated_by>
         <sys_updated_on>2018-08-16 09:17:58</sys_updated_on>
+        <u_sys_id/>
     </m2m_sp_widget_dependency>
 </record_update>

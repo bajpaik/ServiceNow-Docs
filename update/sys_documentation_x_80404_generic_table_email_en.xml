@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="email" label="Email" language="en" table="x_80404_generic_table">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>email</element>
+            <help/>
+            <hint/>
+            <label>Email</label>
+            <language>en</language>
+            <name>x_80404_generic_table</name>
+            <plural>Emails</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>workhstayh</sys_created_by>
+            <sys_created_on>2018-10-01 04:00:56</sys_created_on>
+            <sys_id>2d6af2bedb302300329ffe1ebf9619ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Email</sys_name>
+            <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+            <sys_update_name>sys_documentation_x_80404_generic_table_email_en</sys_update_name>
+            <sys_updated_by>workhstayh</sys_updated_by>
+            <sys_updated_on>2018-10-01 04:00:56</sys_updated_on>
+            <u_sys_id/>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

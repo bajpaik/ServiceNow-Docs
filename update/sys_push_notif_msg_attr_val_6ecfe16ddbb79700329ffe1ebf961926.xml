@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_push_notif_msg_attr_val">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_push_notif_msg_attr_val">
     <sys_push_notif_msg_attr_val action="INSERT_OR_UPDATE">
         <action display_value="Assign to me">78b3bd91dbbf5700329ffe1ebf9619d0</action>
         <calculated_attribute>action_of_button1</calculated_attribute>
@@ -18,6 +17,7 @@
         <sys_update_name>sys_push_notif_msg_attr_val_6ecfe16ddbb79700329ffe1ebf961926</sys_update_name>
         <sys_updated_by>workhstayh</sys_updated_by>
         <sys_updated_on>2018-08-08 08:20:49</sys_updated_on>
+        <u_sys_id/>
         <value/>
     </sys_push_notif_msg_attr_val>
 </record_update>

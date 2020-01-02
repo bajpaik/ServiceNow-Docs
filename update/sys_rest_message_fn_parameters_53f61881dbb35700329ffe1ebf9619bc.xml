@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_rest_message_fn_parameters">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
     <sys_rest_message_fn_parameters action="INSERT_OR_UPDATE">
         <name>id</name>
         <rest_message_function display_value="Search by Job ID">3b90ec84dbff9300329ffe1ebf9619dc</rest_message_function>
@@ -16,6 +15,7 @@
         <sys_updated_by>workhstayh</sys_updated_by>
         <sys_updated_on>2018-08-06 12:34:49</sys_updated_on>
         <type>string</type>
+        <u_sys_id/>
         <value/>
     </sys_rest_message_fn_parameters>
 </record_update>

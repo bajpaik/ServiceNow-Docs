@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_rel_widget_clone">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
     <sp_rel_widget_clone action="INSERT_OR_UPDATE">
         <child display_value="Copy of SC Catalog Item">3d72f60cdbc06700329ffe1ebf96194e</child>
         <cloned>2018-08-16 07:35:53</cloned>
@@ -952,5 +951,6 @@
         <sys_update_name>sp_rel_widget_clone_8672ba0cdbc06700329ffe1ebf961915</sys_update_name>
         <sys_updated_by>workhstayh</sys_updated_by>
         <sys_updated_on>2018-08-16 07:35:53</sys_updated_on>
+        <u_sys_id/>
     </sp_rel_widget_clone>
 </record_update>

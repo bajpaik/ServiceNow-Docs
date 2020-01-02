@@ -1,17 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="709c4c48dbbf9300329ffe1ebf961944" sys_domain="global" table="x_80404_generic_github_jobs" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>job_id</element>
             <position>0</position>
             <sys_created_by>workhstayh</sys_created_by>
-            <sys_created_on>2018-08-03 11:14:41</sys_created_on>
-            <sys_id>c0e7e4c8dbff9300329ffe1ebf96190f</sys_id>
+            <sys_created_on>2019-10-26 07:31:34</sys_created_on>
+            <sys_id>35a648ecdb70001091966f7748961902</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_github_jobs" sys_domain="global" view="Default view">709c4c48dbbf9300329ffe1ebf961944</sys_ui_section>
             <sys_updated_by>workhstayh</sys_updated_by>
-            <sys_updated_on>2018-08-03 11:14:41</sys_updated_on>
+            <sys_updated_on>2019-10-26 07:31:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -19,13 +18,13 @@
             <element>full_time_only</element>
             <position>1</position>
             <sys_created_by>workhstayh</sys_created_by>
-            <sys_created_on>2018-08-03 11:14:41</sys_created_on>
-            <sys_id>44e7e4c8dbff9300329ffe1ebf96190f</sys_id>
+            <sys_created_on>2019-10-26 07:31:34</sys_created_on>
+            <sys_id>f9a648ecdb70001091966f7748961902</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_github_jobs" sys_domain="global" view="Default view">709c4c48dbbf9300329ffe1ebf961944</sys_ui_section>
             <sys_updated_by>workhstayh</sys_updated_by>
-            <sys_updated_on>2018-08-03 11:14:41</sys_updated_on>
+            <sys_updated_on>2019-10-26 07:31:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -33,13 +32,13 @@
             <element>job_description</element>
             <position>2</position>
             <sys_created_by>workhstayh</sys_created_by>
-            <sys_created_on>2018-08-03 11:14:41</sys_created_on>
-            <sys_id>c4e7e4c8dbff9300329ffe1ebf96190f</sys_id>
+            <sys_created_on>2019-10-26 07:31:34</sys_created_on>
+            <sys_id>7da648ecdb70001091966f7748961902</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_github_jobs" sys_domain="global" view="Default view">709c4c48dbbf9300329ffe1ebf961944</sys_ui_section>
             <sys_updated_by>workhstayh</sys_updated_by>
-            <sys_updated_on>2018-08-03 11:14:41</sys_updated_on>
+            <sys_updated_on>2019-10-26 07:31:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -47,55 +46,97 @@
             <element>location</element>
             <position>3</position>
             <sys_created_by>workhstayh</sys_created_by>
-            <sys_created_on>2018-08-03 11:14:41</sys_created_on>
-            <sys_id>48e7e4c8dbff9300329ffe1ebf96190f</sys_id>
+            <sys_created_on>2019-10-26 07:31:34</sys_created_on>
+            <sys_id>fda648ecdb70001091966f7748961902</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_github_jobs" sys_domain="global" view="Default view">709c4c48dbbf9300329ffe1ebf961944</sys_ui_section>
             <sys_updated_by>workhstayh</sys_updated_by>
-            <sys_updated_on>2018-08-03 11:14:41</sys_updated_on>
+            <sys_updated_on>2019-10-26 07:31:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_date_of_posting</element>
+            <position>4</position>
+            <sys_created_by>workhstayh</sys_created_by>
+            <sys_created_on>2019-10-26 07:31:34</sys_created_on>
+            <sys_id>71a648ecdb70001091966f7748961903</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_github_jobs" sys_domain="global" view="Default view">709c4c48dbbf9300329ffe1ebf961944</sys_ui_section>
+            <sys_updated_by>workhstayh</sys_updated_by>
+            <sys_updated_on>2019-10-26 07:31:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>company</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>workhstayh</sys_created_by>
-            <sys_created_on>2018-08-03 11:14:41</sys_created_on>
-            <sys_id>c8e7e4c8dbff9300329ffe1ebf96190f</sys_id>
+            <sys_created_on>2019-10-26 07:31:34</sys_created_on>
+            <sys_id>f1a648ecdb70001091966f7748961903</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_github_jobs" sys_domain="global" view="Default view">709c4c48dbbf9300329ffe1ebf961944</sys_ui_section>
             <sys_updated_by>workhstayh</sys_updated_by>
-            <sys_updated_on>2018-08-03 11:14:41</sys_updated_on>
+            <sys_updated_on>2019-10-26 07:31:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>company_url</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>workhstayh</sys_created_by>
-            <sys_created_on>2018-08-03 11:14:41</sys_created_on>
-            <sys_id>4ce7e4c8dbff9300329ffe1ebf96190f</sys_id>
+            <sys_created_on>2019-10-26 07:31:34</sys_created_on>
+            <sys_id>75a648ecdb70001091966f7748961903</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_github_jobs" sys_domain="global" view="Default view">709c4c48dbbf9300329ffe1ebf961944</sys_ui_section>
             <sys_updated_by>workhstayh</sys_updated_by>
-            <sys_updated_on>2018-08-03 11:14:41</sys_updated_on>
+            <sys_updated_on>2019-10-26 07:31:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>description</element>
-            <position>6</position>
+            <position>7</position>
             <sys_created_by>workhstayh</sys_created_by>
-            <sys_created_on>2018-08-03 11:14:41</sys_created_on>
-            <sys_id>cce7e4c8dbff9300329ffe1ebf96190f</sys_id>
+            <sys_created_on>2019-10-26 07:31:34</sys_created_on>
+            <sys_id>f5a648ecdb70001091966f7748961903</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_github_jobs" sys_domain="global" view="Default view">709c4c48dbbf9300329ffe1ebf961944</sys_ui_section>
             <sys_updated_by>workhstayh</sys_updated_by>
-            <sys_updated_on>2018-08-03 11:14:41</sys_updated_on>
+            <sys_updated_on>2019-10-26 07:31:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_integer_value_1</element>
+            <position>8</position>
+            <sys_created_by>workhstayh</sys_created_by>
+            <sys_created_on>2019-10-26 07:31:34</sys_created_on>
+            <sys_id>79a648ecdb70001091966f7748961903</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_github_jobs" sys_domain="global" view="Default view">709c4c48dbbf9300329ffe1ebf961944</sys_ui_section>
+            <sys_updated_by>workhstayh</sys_updated_by>
+            <sys_updated_on>2019-10-26 07:31:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_integer_value_2</element>
+            <position>9</position>
+            <sys_created_by>workhstayh</sys_created_by>
+            <sys_created_on>2019-10-26 07:31:34</sys_created_on>
+            <sys_id>f9a648ecdb70001091966f7748961903</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_80404_generic_github_jobs" sys_domain="global" view="Default view">709c4c48dbbf9300329ffe1ebf961944</sys_ui_section>
+            <sys_updated_by>workhstayh</sys_updated_by>
+            <sys_updated_on>2019-10-26 07:31:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -121,6 +162,7 @@
             <sys_updated_on>2018-08-03 09:15:24</sys_updated_on>
             <sys_user/>
             <title>true</title>
+            <u_sys_id/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
         </sys_ui_section>

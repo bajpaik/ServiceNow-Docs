@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_db_object">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
     <sys_db_object action="INSERT_OR_UPDATE">
         <access>public</access>
         <actions_access>false</actions_access>
@@ -33,6 +32,9 @@
         <sys_update_name>sys_db_object_35251248db806700329ffe1ebf96199a</sys_update_name>
         <sys_updated_by>workhstayh</sys_updated_by>
         <sys_updated_on>2018-08-16 05:29:18</sys_updated_on>
+        <u_planned_end/>
+        <u_planned_start/>
+        <u_sys_id/>
         <update_access>false</update_access>
         <user_role display_value="x_80404_generic.portal_favorite_user" name="x_80404_generic.portal_favorite_user">e7755648db806700329ffe1ebf9619aa</user_role>
         <ws_access>true</ws_access>

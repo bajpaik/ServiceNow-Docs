@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_db_object">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
     <sys_db_object action="INSERT_OR_UPDATE">
         <access>public</access>
         <actions_access>false</actions_access>
@@ -7,9 +6,9 @@
         <caller_access/>
         <client_scripts_access>false</client_scripts_access>
         <configuration_access>false</configuration_access>
-        <create_access>false</create_access>
+        <create_access>true</create_access>
         <create_access_controls>true</create_access_controls>
-        <delete_access>false</delete_access>
+        <delete_access>true</delete_access>
         <extension_model/>
         <is_extendable>false</is_extendable>
         <label>GitHub Jobs</label>
@@ -25,15 +24,18 @@
         <sys_created_by>workhstayh</sys_created_by>
         <sys_created_on>2018-08-03 08:51:28</sys_created_on>
         <sys_id>7ed608c4dbbf9300329ffe1ebf961927</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>GitHub Jobs</sys_name>
         <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
         <sys_update_name>sys_db_object_7ed608c4dbbf9300329ffe1ebf961927</sys_update_name>
         <sys_updated_by>workhstayh</sys_updated_by>
-        <sys_updated_on>2018-08-03 08:51:28</sys_updated_on>
-        <update_access>false</update_access>
+        <sys_updated_on>2019-06-30 10:24:02</sys_updated_on>
+        <u_planned_end/>
+        <u_planned_start/>
+        <u_sys_id/>
+        <update_access>true</update_access>
         <user_role display_value="x_80404_generic.github_jobs_user" name="x_80404_generic.github_jobs_user">4a1788c4dbbf9300329ffe1ebf96192b</user_role>
         <ws_access>true</ws_access>
         <x_80404_generic_description_about_this_table/>

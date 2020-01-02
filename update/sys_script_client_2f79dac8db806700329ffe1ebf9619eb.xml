@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="sys_script_client">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
     <sys_script_client action="INSERT_OR_UPDATE">
         <active>true</active>
         <applies_extended>false</applies_extended>
@@ -7,6 +6,7 @@
         <description>Populate messages on top of the form.</description>
         <field>sys_created_on</field>
         <global>true</global>
+        <isolate_script>false</isolate_script>
         <messages/>
         <name>Header Messages in ServiceNow</name>
         <order/>
@@ -17,7 +17,7 @@
 //var message = g_form.getValue('reopen_count');
 	 
 	 var message = 'Taking ServiceNow® Widgets to the Next Level with Google Material Design Lite (MDL). Personalizing the Portal Experience With Favorites';
-g_form.setNewFormMessage( 'This table is used to store user\'s favorites : '+message);
+g_form.addInfoMessage( 'This table is used to store user\'s favorites : '+message);
 
    
 }
@@ -28,7 +28,7 @@ g_form.setNewFormMessage( 'This table is used to store user\'s favorites : '+mes
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2f79dac8db806700329ffe1ebf9619eb</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Header Messages in ServiceNow</sys_name>
         <sys_overrides/>
         <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
@@ -36,9 +36,10 @@ g_form.setNewFormMessage( 'This table is used to store user\'s favorites : '+mes
         <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
         <sys_update_name>sys_script_client_2f79dac8db806700329ffe1ebf9619eb</sys_update_name>
         <sys_updated_by>workhstayh</sys_updated_by>
-        <sys_updated_on>2018-08-16 06:02:49</sys_updated_on>
+        <sys_updated_on>2018-11-06 05:33:46</sys_updated_on>
         <table>x_80404_generic_portal_favorite</table>
         <type>onLoad</type>
+        <u_sys_id/>
         <ui_type>10</ui_type>
         <view/>
     </sys_script_client>

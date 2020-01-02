@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description/>
+        <media_type/>
+        <name>Text search</name>
+        <scoped_name>x_80404_generic_Text search</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>workhstayh</sys_created_by>
+        <sys_created_on>2018-09-13 11:55:05</sys_created_on>
+        <sys_id>6c393f49dba8af00329ffe1ebf961999</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Text search</sys_name>
+        <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+        <sys_update_name>sys_ui_macro_6c393f49dba8af00329ffe1ebf961999</sys_update_name>
+        <sys_updated_by>workhstayh</sys_updated_by>
+        <sys_updated_on>2018-09-13 11:55:05</sys_updated_on>
+        <u_sys_id/>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<link href="89ea7dfa0a0a0b860027d02d69a97945.cssdbx?" rel="stylesheet" type="text/css"/>
+<g:evaluate>
+  var css = new GlideRecord("content_css");
+  css.addQuery("name", "Text Search");
+  css.query()
+  css.next();
+  var cssid = ""+css.sys_id;
+</g:evaluate>
+<link href="${cssid}.cssdbx?" rel="stylesheet" type="text/css"/>
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

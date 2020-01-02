@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_angular_provider">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_angular_provider">
     <sp_angular_provider action="INSERT_OR_UPDATE">
         <name>favoriteToggle</name>
         <script><![CDATA[//This directive is used to provide a common HTML template to be used as the toggle link. Notice that we reference the above service in two ways:
@@ -37,5 +36,6 @@ function favoriteToggle(portalFavorites) {
         <sys_updated_by>workhstayh</sys_updated_by>
         <sys_updated_on>2018-08-16 06:24:18</sys_updated_on>
         <type>directive</type>
+        <u_sys_id/>
     </sp_angular_provider>
 </record_update>

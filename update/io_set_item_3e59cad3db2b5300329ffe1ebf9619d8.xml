@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="io_set_item">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
     <io_set_item action="INSERT_OR_UPDATE">
         <order>100</order>
         <sc_cat_item display_value="Strategy">98d84ad3db2b5300329ffe1ebf961991</sc_cat_item>
@@ -15,6 +14,7 @@
         <sys_update_name>io_set_item_3e59cad3db2b5300329ffe1ebf9619d8</sys_update_name>
         <sys_updated_by>workhstayh</sys_updated_by>
         <sys_updated_on>2018-08-01 10:25:09</sys_updated_on>
+        <u_sys_id/>
         <variable_set display_value="variables for Strategy SR">dc394ed3db2b5300329ffe1ebf961974</variable_set>
     </io_set_item>
 </record_update>

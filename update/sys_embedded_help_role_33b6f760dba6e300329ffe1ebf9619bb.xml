@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="personalize_read_dictionary" name="personalize_read_dictionary">1f401b41c3210200d23cdb1122d3aec3</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2018-12-20 08:28:08</sys_created_on>
+        <sys_id>33b6f760dba6e300329ffe1ebf9619bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1f401b41c3210200d23cdb1122d3aec3</sys_name>
+        <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+        <sys_update_name>sys_embedded_help_role_33b6f760dba6e300329ffe1ebf9619bb</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-12-20 08:28:08</sys_updated_on>
+        <u_sys_id/>
+    </sys_embedded_help_role>
+</record_update>

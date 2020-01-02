@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_documentation element="journal_input_field" label="Journal Input Field" language="en" table="x_80404_generic_table">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>journal_input_field</element>
@@ -21,6 +20,7 @@
             <sys_update_name>sys_documentation_x_80404_generic_table_journal_input_field_en</sys_update_name>
             <sys_updated_by>workhstayh</sys_updated_by>
             <sys_updated_on>2018-07-13 22:14:34</sys_updated_on>
+            <u_sys_id/>
             <url/>
             <url_target/>
         </sys_documentation>

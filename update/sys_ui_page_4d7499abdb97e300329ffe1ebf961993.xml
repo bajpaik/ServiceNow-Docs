@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[if ("${sysparm_checked_out}" == "true") {
+  alert('"${sysparm_checked_out}"');
+}
+]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_80404_generic_s.do</endpoint>
+        <html><![CDATA[<g:evaluate var="jvar_document_array"
+expression="RP.getWindowProperties().get('sysparm_document_array')" />
+
+<script>
+  alert('"${jvar_document_array}"');
+</script>]]></html>
+        <name>s</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>workhstayh</sys_created_by>
+        <sys_created_on>2019-02-04 11:08:41</sys_created_on>
+        <sys_id>4d7499abdb97e300329ffe1ebf961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>s</sys_name>
+        <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+        <sys_update_name>sys_ui_page_4d7499abdb97e300329ffe1ebf961993</sys_update_name>
+        <sys_updated_by>workhstayh</sys_updated_by>
+        <sys_updated_on>2019-02-04 11:08:41</sys_updated_on>
+        <u_sys_id/>
+    </sys_ui_page>
+</record_update>

@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_push_notif_msg_content">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_push_notif_msg_content">
     <sys_push_notif_msg_content action="INSERT_OR_UPDATE">
         <name>Buttons to respond to incident</name>
-        <push_app display_value="ServiceNow Mobile Application">ab704041ff1102009738ffffffffff33</push_app>
+        <push_app display_value="ServiceNow Classic Mobile Application">ab704041ff1102009738ffffffffff33</push_app>
         <script><![CDATA[(function buildJSON(/*GlideRecord*/ current, /*String*/ message, /*Object*/ attributes) {
 
  var json = {};
@@ -37,5 +36,6 @@ json = {
         <sys_update_name>sys_push_notif_msg_content_113435d1dbbf5700329ffe1ebf961952</sys_update_name>
         <sys_updated_by>workhstayh</sys_updated_by>
         <sys_updated_on>2018-08-07 14:01:33</sys_updated_on>
+        <u_sys_id/>
     </sys_push_notif_msg_content>
 </record_update>

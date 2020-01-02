@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_row">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row">
     <sp_row action="INSERT_OR_UPDATE">
         <class_name/>
         <order>1</order>
@@ -17,5 +16,6 @@
         <sys_update_name>sp_row_9d6bcfccdb046700329ffe1ebf961977</sys_update_name>
         <sys_updated_by>workhstayh</sys_updated_by>
         <sys_updated_on>2018-08-16 09:24:48</sys_updated_on>
+        <u_sys_id/>
     </sp_row>
 </record_update>

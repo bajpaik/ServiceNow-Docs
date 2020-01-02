@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="m2m_sp_dependency_js_include">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include">
     <m2m_sp_dependency_js_include action="INSERT_OR_UPDATE">
         <order>100</order>
         <sp_dependency display_value="sortable">84d82e84dbc06700329ffe1ebf9619a6</sp_dependency>
@@ -16,5 +15,6 @@
         <sys_update_name>m2m_sp_dependency_js_include_de8a6ec4dbc06700329ffe1ebf961975</sys_update_name>
         <sys_updated_by>workhstayh</sys_updated_by>
         <sys_updated_on>2018-08-16 07:01:14</sys_updated_on>
+        <u_sys_id/>
     </m2m_sp_dependency_js_include>
 </record_update>

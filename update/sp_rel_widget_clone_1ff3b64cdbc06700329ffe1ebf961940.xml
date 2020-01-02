@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_rel_widget_clone">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
     <sp_rel_widget_clone action="INSERT_OR_UPDATE">
         <child display_value="Copy of KB Article Page">9bf3b64cdbc06700329ffe1ebf96193c</child>
         <cloned>2018-08-16 07:42:32</cloned>
@@ -133,5 +132,6 @@ function showStarRating() {
         <sys_update_name>sp_rel_widget_clone_1ff3b64cdbc06700329ffe1ebf961940</sys_update_name>
         <sys_updated_by>workhstayh</sys_updated_by>
         <sys_updated_on>2018-08-16 07:42:32</sys_updated_on>
+        <u_sys_id/>
     </sp_rel_widget_clone>
 </record_update>

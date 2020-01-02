@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_script">
+    <sys_transform_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <map display_value="INCIDENT ATTACHMENT WS">bee947acdb18e300329ffe1ebf9619f9</map>
+        <order>100</order>
+        <script><![CDATA[(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+
+	if(ignore !=true && error!=true){
+	
+	var StringUtil = GlideStringUtil;
+	var attachment = new Attachment();
+	attachment.write('incident', target.sys_id, source.u_attachement1_name,'',StringUtil.base64DecodeAsBytes(source.u_attachment1));
+	
+}
+//target.sys_id is the incident sys_id
+//base64DecodeAsBytes is the base64 encoded string to be decoded
+
+})(source, map, log, target);]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>workhstayh</sys_created_by>
+        <sys_created_on>2018-08-30 09:16:40</sys_created_on>
+        <sys_id>bfbf8bacdb18e300329ffe1ebf9619c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onAfter</sys_name>
+        <sys_package display_value="Generic" source="x_80404_generic">0cbcea8fdb879300329ffe1ebf96192b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</sys_scope>
+        <sys_update_name>sys_transform_script_bfbf8bacdb18e300329ffe1ebf9619c3</sys_update_name>
+        <sys_updated_by>workhstayh</sys_updated_by>
+        <sys_updated_on>2018-08-30 09:16:40</sys_updated_on>
+        <u_sys_id/>
+        <when>onAfter</when>
+    </sys_transform_script>
+</record_update>

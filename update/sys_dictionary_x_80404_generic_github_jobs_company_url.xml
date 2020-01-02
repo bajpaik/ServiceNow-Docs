@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_dictionary action="INSERT_OR_UPDATE" element="company_url" table="x_80404_generic_github_jobs">
         <active>true</active>
         <array>false</array>
@@ -60,6 +59,7 @@
         <sys_updated_on>2018-08-10 09:48:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
+        <u_sys_id/>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>

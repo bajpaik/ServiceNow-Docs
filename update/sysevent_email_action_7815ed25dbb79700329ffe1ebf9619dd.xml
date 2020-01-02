@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="sysevent_email_action">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
     <sysevent_email_action action="INSERT_OR_UPDATE">
         <action_insert>true</action_insert>
         <action_update>false</action_update>
@@ -72,6 +71,7 @@
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>
+        <u_sys_id/>
         <weight>0</weight>
     </sysevent_email_action>
 </record_update>

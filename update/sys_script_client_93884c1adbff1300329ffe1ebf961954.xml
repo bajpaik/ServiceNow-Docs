@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="sys_script_client">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
     <sys_script_client action="INSERT_OR_UPDATE">
         <active>true</active>
         <applies_extended>false</applies_extended>
@@ -7,6 +6,7 @@
         <description>AJAX call to get number of related incidents for a change</description>
         <field>active</field>
         <global>true</global>
+        <isolate_script>false</isolate_script>
         <messages>getMessage('https://github.com/bajpaik/ServiceNow-1')</messages>
         <name>incident related to change</name>
         <order/>
@@ -41,6 +41,7 @@
         <sys_updated_on>2018-08-10 08:47:50</sys_updated_on>
         <table>change_request</table>
         <type>onLoad</type>
+        <u_sys_id/>
         <ui_type>0</ui_type>
         <view/>
     </sys_script_client>

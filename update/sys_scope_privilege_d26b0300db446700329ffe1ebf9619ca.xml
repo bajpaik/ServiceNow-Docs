@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_scope_privilege">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
     <sys_scope_privilege action="INSERT_OR_UPDATE">
         <operation>execute</operation>
         <source_scope display_value="Generic">0cbcea8fdb879300329ffe1ebf96192b</source_scope>
@@ -19,5 +18,6 @@
         <target_name>Glide API: string utilities</target_name>
         <target_scope display_value="Global">global</target_scope>
         <target_type>scriptable</target_type>
+        <u_sys_id/>
     </sys_scope_privilege>
 </record_update>

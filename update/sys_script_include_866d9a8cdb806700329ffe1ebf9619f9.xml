@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_script_include">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
     <sys_script_include action="INSERT_OR_UPDATE">
         <access>public</access>
         <active>true</active>
@@ -163,5 +162,6 @@ getFavorites: function() {
         <sys_update_name>sys_script_include_866d9a8cdb806700329ffe1ebf9619f9</sys_update_name>
         <sys_updated_by>workhstayh</sys_updated_by>
         <sys_updated_on>2018-08-16 07:15:10</sys_updated_on>
+        <u_sys_id/>
     </sys_script_include>
 </record_update>
